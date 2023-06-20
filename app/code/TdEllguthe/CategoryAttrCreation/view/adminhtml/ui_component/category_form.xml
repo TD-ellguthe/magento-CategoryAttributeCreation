@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="my_fieldset"> <!-- arbitrary -->
+        <!-- define properties of new fieldset "my_fieldset" -->
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="label" xsi:type="string" translate="true">My Fieldset</item>
+                <item name="collapsible" xsi:type="boolean">true</item> <!-- TODO -->
+                <item name="sortOrder" xsi:type="number">10</item> <!-- position on admin page -->
+            </item>
+        </argument>
+        <field name="my_attribute"> <!-- name = attribute code -->
+            <!-- define attribute input row -->
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="required" xsi:type="boolean">true</item>
+                    <item name="validation" xsi:type="array">
+                        <item name="required-entry" xsi:type="boolean">true</item>
+                    </item>
+                    <item name="sortOrder" xsi:type="number">10</item>
+                    <item name="dataType" xsi:type="string">string</item>
+                    <item name="formElement" xsi:type="string">input</item>
+                    <item name="label" translate="true" xsi:type="string">My Attribute</item>
+                </item>
+            </argument>
+        </field>
+    </fieldset>
+</form>

@@ -1,0 +1,21 @@
+{
+    "name": "TdEllguthe/module-CatalogAttrCreation",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "TechDivision Academy",
+            "email": "info@techdivision.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "TdEllguthe\\CatalogAttrCreation\\": ""
+        }
+    }
+}
